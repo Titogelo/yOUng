@@ -42,6 +42,8 @@ To deploy the application:
    ```
    appcfg.py update -A <your-project-id> -V v1 .
    ```
+
+   gcloud app deploy --project [YOUR_PROJECT_ID] --version [YOUR_VERSION_ID]
    
    If this isn't your first deployment, you will need to set the new version as the default version with
    

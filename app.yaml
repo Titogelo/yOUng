@@ -6,7 +6,6 @@
 runtime: python27
 api_version: 1
 threadsafe: yes
-version: 1
 
 # Handlers define how to route requests to your application.
 handlers:
@@ -25,6 +24,11 @@ handlers:
   mime_type: text/javascript
   static_files: static/js/\1
   upload: static/js/(.*\.js)
+
+- url: /vendor/(.*\.(js|css|eot|svg|ttf|woff|woff2|less|scss))
+  mime_type: text/css
+  static_files: static/vendor/\1
+  upload: static/vendor/(.*\.(js|css|eot|svg|ttf|woff|woff2|less|scss))
 
 - url: /(.*\.ico)
   mime_type: image/x-icon
@@ -59,3 +63,7 @@ handlers:
 libraries:
 #- name: ssl
 #  version: latest
+
+skip_files:
+- ^(node_modules/.*)
+
