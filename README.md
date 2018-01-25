@@ -1,8 +1,3 @@
-## Simple landing page skeleton using Python Flask and Google App Engine
-
-A skeleton for building simple landing page applications on Google App Engine with the
-[Flask micro framework](http://flask.pocoo.org).
-
 ## Run Locally
 1. Install the [App Engine Python SDK](https://developers.google.com/appengine/downloads).
 See the README file for directions. You'll need python 2.7 and [pip 1.4 or later]
@@ -50,10 +45,3 @@ To deploy the application:
    ```
    appcfg.py set_default_version -V v1 -A <your-project-id>
    ```
-
-1. Congratulations!  Your application is now live at your-app-id.appspot.com
-
-## Licensing
-
-## Author
-Radek Lonka
